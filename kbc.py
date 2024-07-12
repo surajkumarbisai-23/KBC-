@@ -5,10 +5,9 @@ def greet(name):
 def instruction():
     print("********* Rules to  Follow(Instructions)*************")
     print("""1.choose one from given optiom only
-2.Enter single option only
-3.To Stay in game provide give correct answer
-4.if want to quit the game pls enter zero\n\n""")
-
+        2.There will be 7 Questions 
+        3.To Stay in game provide give correct answer
+        4.if want to quit the game pls enter zero\n\n""")
 
 
 def questions():
@@ -26,11 +25,11 @@ def questions():
     
     for i in range(0,len(Questions)):
         Question=Questions[i]
-        print(f"Question for Rs:${level[i]} is :: {Question[0]}::\n\n")
+        print(f"Question for Rs:${level[i]} is -->> {Question[0]}::\n")
         print(f"1.{Question[1]}               2.{Question[2]}")
         print(f"3.{Question[3]}               4.{Question[4]}")
 
-        answer=int(input("\n\nEnter the correct option :: "))
+        answer=int(input("\nEnter the correct option :: "))
         if(answer==Question[-1]):
             amount=level[i]
             print("\nCorrect answer")
